@@ -1,0 +1,95 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  /* background-color: #1b1b36; */
+  background-color: #fff;
+}
+
+.wrapperIcons {
+  max-width: 8rem;
+  gap: .4rem;
+  display: flex;
+  justify-content: center;
+}
+
+.iconHammer,
+.iconHelmet,
+.iconTrowel {
+  width: 1.5rem;
+}
+
+.contentNav h1 {
+  color: #1c1d46;
+  font-size: 1.2rem;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.nav .nav-links {
+  display: none;
+  list-style: none;
+}
+
+.nav .nav-links li a {
+  text-decoration: none;
+}
+
+.burguerIcon {
+  font-size: 1.5rem;
+}
+
+.nav .nav-toggle .closeNavIcon {
+  display: none;
+}
+
+/*--- Menu Aberto ---*/
+.nav.open {
+  display: flex;
+  justify-content: center;
+
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+.nav.open .contentNav {
+  display: none;
+}
+
+.nav.open .nav-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav.open .burguerIcon {
+  display: none;
+}
+
+.nav.open .nav-toggle .closeNavIcon {
+  display: initial;
+  position: fixed;
+  top: 2rem;
+  right: 1rem;
+  font-size: 1.3rem;
+}
+
+
+
+
+
+
+/* apagar */
+
+
+
+
+
+
+

@@ -1,0 +1,89 @@
+.homeContainer {
+  background-image: url(../assets/homeWallpaper.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  height: 53vh;
+  
+  position: relative;
+}
+
+.overlayHomeDiv {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(12, 19, 76, 0.525);
+}
+
+.contentHome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+
+  color: #fff;
+}
+
+.contentHome p {
+  margin-bottom: 1rem;
+}
+
+.contentHome p::before {
+  content: '';
+  display: inline-block;
+  width: 1.5rem;
+  border-top: 1px solid rgb(255, 139, 1);
+  margin-right: 1rem;
+  vertical-align: middle;
+}
+
+.contentHome p::after {
+  content: '';
+  display: inline-block;
+  width: 1.5rem;
+  border-top: 1px solid rgb(255, 139, 1);
+  margin-left: 1rem;
+  vertical-align: middle;
+}
+
+.contentHome h1 {
+  margin-bottom: 1rem;
+}
+
+.buttonHome {
+  border: none;
+  background-color: #ff882c;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 5px;
+
+  display: flex;
+  align-items: center;
+
+  transition: 0.5s;
+}
+
+.buttonHome:hover {
+  background-color: rgba(12, 16, 41, 1);
+}
+
+.buttonHome span {
+  margin-right: 0.4rem;
+  font-weight: 500;
+}
+
+.rotate {
+  animation: rotateAnimation 1s;
+}
+
+@keyframes rotateAnimation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
