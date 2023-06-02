@@ -1,0 +1,32 @@
+.miniNav {
+  background-color: #002346;
+  color: white;
+
+  display: flex;
+  justify-content: space-between;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.miniNav ul {
+  list-style: none;
+}
+
+.miniNav ul li {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.miniNav .ulSocialIcons {
+  display: flex;
+  gap: 1rem;
+}
+
+.miniNav .iconInstagram,
+.miniNav .iconYoutube,
+.miniNav .iconTwitter {
+  color: aliceblue;
+}

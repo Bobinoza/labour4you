@@ -1,0 +1,81 @@
+.section_cycle {
+  padding: 2rem 0 4rem 0;
+  /* background: var(--white); */
+}
+
+.xxxx {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.main_info_cycle {
+  margin-bottom: 1.8rem;
+  text-align: center;
+}
+.main_info_cycle h2 {
+  margin-bottom: 0.8rem;
+}
+
+.main_info_cycle p {
+  color: #8d8d99;
+}
+
+.cycle_list {
+  margin-left: 20px;
+  counter-reset: section;
+  list-style-type: none;
+  list-style: none;
+}
+
+.cycle_list_item {
+  position: relative;
+  padding-left: 32px;
+  padding-right: 8px;
+  counter-increment: section;
+  padding-bottom: 34px;
+}
+
+.cycle_list_item::before {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 4px;
+  top: 0;
+  left: 0;
+  background: #f0f0f0;
+  transform: translateY(7px);
+}
+
+.cycle_list_item p:nth-child(1) {
+  color: #1c1d46;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+
+  margin-bottom: .8rem;
+  /* letter-spacing: .05rem; */
+  /* line-height: 1.5rem; */
+}
+
+.cycle_list_item p:nth-child(2) {
+  color: #8d8d99;
+  line-height: 1.3rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.cycle_list_item_title::before {
+content: '0' counters(section, '.') " ";
+padding-right: 14px;
+}
+
+.cycle_list_item_title::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 14px;
+  width: 14px;
+  top: 7px;
+  left: -5px;
+  border-radius: 50%;
+  background-color: #ff9c00;
+}

@@ -15,32 +15,27 @@ const Nav = () => {
 
   return (
     <nav className={`nav ${isNavOpen ? 'open' : ''}`}>
-      <div>
-        <nav>
-          <ul>oi</ul>
-        </nav>
-      </div>
-      
-      <div>
-        <div className='contentNav'>
-          <div className='wrapperIcons'>
-            <FontAwesomeIcon icon={faHammer} className='iconHammer' />
-            <FontAwesomeIcon icon={faHelmetSafety} className='iconHelmet' />
-            <FontAwesomeIcon icon={faTrowel} className='iconTrowel' />
-          </div>
-          <h1>Labour4You</h1>
+
+
+      <div className='contentNav'>
+        <div className='wrapperIcons'>
+          <FontAwesomeIcon icon={faHammer} className='iconHammer' />
+          <FontAwesomeIcon icon={faHelmetSafety} className='iconHelmet' />
+          <FontAwesomeIcon icon={faTrowel} className='iconTrowel' />
         </div>
-        <ul className="nav-links">
-          <li><a href="/">Home</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/services">Services</a></li>
-          <li><a href="/contact">Contact</a></li>
-        </ul>
-        <div className="nav-toggle" onClick={toggleNav}>
-          <RxHamburgerMenu className='burguerIcon' />
-          <RxCross1 className='closeNavIcon' />
-        </div>
+        <h1>Labour<span className='rotate-animation'>4</span>You</h1>
       </div>
+      <ul className="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/services">Services</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+      <div className="nav-toggle" onClick={toggleNav}>
+        <RxHamburgerMenu className='burguerIcon' />
+        <RxCross1 className='closeNavIcon' />
+      </div>
+
     </nav>
   )
 }

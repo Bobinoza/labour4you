@@ -1,0 +1,52 @@
+.backgroundImageForm {
+  background-image: url(../assets/swiperImage2.jpg);
+  height: 17rem;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.contact_form {
+  /* background-color: rgba(18, 18, 20, 1);
+   */
+   background: rgba(255, 255, 255, 0.6);
+   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+   backdrop-filter: blur(20px);
+   -webkit-backdrop-filter: blur(20px);
+
+  border-radius: .25rem;
+  color: #fff;
+
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  row-gap: 1rem;
+  padding: 1rem;
+  max-width: 20rem;
+  margin-top: -8rem;
+}
+
+.contact_form input,
+.contact_form textarea {
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  padding: 0.8rem;
+
+  
+  outline: none;
+}
+
+.contact_form a {
+  text-align: center;
+}
+
+.buttonForm {
+  border: none;
+  background-color: #ff9c00;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 5px;
+  font-weight: 500;
+
+  transition: 0.5s;
+}

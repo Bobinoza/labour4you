@@ -29,6 +29,11 @@
   font-family: 'Orbitron', sans-serif;
 }
 
+.contentNav span {
+  color: #ff9c00;
+  font-size: 1.4rem;
+}
+
 .nav .nav-links {
   display: none;
   list-style: none;
@@ -44,6 +49,21 @@
 
 .nav .nav-toggle .closeNavIcon {
   display: none;
+}
+
+/*--- Rotação do número 4 ---*/
+@keyframes rotate {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+.rotate-animation {
+  display: inline-block;
+  animation: rotate 3s infinite linear;
 }
 
 /*--- Menu Aberto ---*/
